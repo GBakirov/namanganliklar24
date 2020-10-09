@@ -108,7 +108,7 @@ body{
   flex-wrap: wrapS;
 }
 .site-header__exchange-rates{
-  margin-left: 17px ;
+  margin-left: 17px;
 }
 
 .site-header__actions{
@@ -145,18 +145,36 @@ body{
   margin-right: 26px;
 }
 /*Search-button*/
-.search-button{
+.search-button__wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 8px;
+}
+.search-button{
+  padding: 0;
   border: none;
   border-radius: 5px;
   background-color: #ffffff;
 }
+
 /*Language-toggler*/
 .language-toggler{
   padding: 10px;
   border: none;
   border-radius: 5px;
   background-color: #ffffff;
+}
+.language-toggler__wrapper{
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+}
+.language-toggler__img{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 5px;
 }
 /*Telegram-sub*/
 .telegram-sub{
@@ -170,7 +188,13 @@ body{
   border-radius: 5px;
   background-color: #1e96c8;
   background-image: linear-gradient(90deg, #1E96C8 15.07%, #37AEE2 85.96%);
-
+}
+.telegram-sub:hover{
+  background-color: #37AEE2; 
+  background-image: linear-gradient(90deg, #37AEE2  15.07%, #1E96C8 85.96%);
+}
+.telegram-sub__img{
+  margin-right: 7px;
 }
 .telegram-sub__text{
   font-weight: 500;

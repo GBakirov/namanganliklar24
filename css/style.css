@@ -1,7 +1,12 @@
 /*Table of contents*/
-/*Fonts*/
-/*Generl styles*/
-/*Container*/
+/*1. Fonts*/
+/*2. Generl styles*/
+/*3. Container*/
+/*4. Site-header*/
+/*5. Exchange-rates*/
+/*6. Search-button*/
+/*7. Language-toggler*/
+/*8. Telegram-sub*/
 
 /*FONTS*/
 @font-face {
@@ -89,6 +94,81 @@ body{
   margin: 0 auto;
 
 } 
+/*Site-header*/
+.site-header{
+  border-top: 4px solid #295093;
+  background-color: #F6F6F9;
+  padding-top: 40px;
+  padding-bottom: 23px;
+}
+.site-header__top{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrapS;
+}
+.site-header__actions{
+  display: flex;
+  flex-wrap: wrap;
+  
+  margin-left: auto;
+}
+/*LOGO*/
+.logo{
+  border-radius: 5px;
+  padding: 4px 8px;
+  display: flex;
+  background-color: #fff;
+  box-shadow: 0px 2px 6px rgba(202, 202, 202, 0.25);
+}
+/* Exchange-rates*/
+.exchange-rates{
+  display: flex;
+  align-items: center;
+  padding:0;
+  margin: 0;
+  margin-left: 17px;
+  list-style-type: none; 
+  color: #7A7A7A;
+}
+.exchange-rates__icon{
+  color: #285193;
+}
+.exchange-rates__item:not(:last-child){
+  margin-right: 26px;
+}
+/*Search-button*/
+.search-button{
+  padding: 8px;
+  border: none;
+  margin-right: 29px;
+  border-radius: 5px;
+  background-color: #ffffff;
+}
+/*Language-toggler*/
+.language-toggler{
+  padding: 10px;
+  border: none;
+  margin-right: 24px;
+  border-radius: 5px;
+  background-color: #ffffff;
+}
+/*Telegram-sub*/
+.telegram-sub{
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+  border-radius: 5px;
+  background-color: #1e96c8;
+  background-image: linear-gradient(90deg, #1E96C8 15.07%, #37AEE2 85.96%);
+
+}
+.telegram-sub__text{
+  font-weight: 500;
+}
 
 
 

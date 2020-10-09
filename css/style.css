@@ -3,10 +3,11 @@
 /*2. Generl styles*/
 /*3. Container*/
 /*4. Site-header*/
-/*5. Exchange-rates*/
-/*6. Search-button*/
-/*7. Language-toggler*/
-/*8. Telegram-sub*/
+/*5.Logo*/
+/*6. Exchange-rates*/
+/*7. Search-button*/
+/*8. Language-toggler*/
+/*9. Telegram-sub*/
 
 /*FONTS*/
 @font-face {
@@ -106,11 +107,20 @@ body{
   align-items: center;
   flex-wrap: wrapS;
 }
+.site-header__exchange-rates{
+  margin-left: 17px ;
+}
+
 .site-header__actions{
   display: flex;
   flex-wrap: wrap;
-  
   margin-left: auto;
+}
+.site-header__search-button{
+  margin-right: 29px;
+}
+.site-header__language-toggler{
+  margin-right: 24px;
 }
 /*LOGO*/
 .logo{
@@ -125,8 +135,6 @@ body{
   display: flex;
   align-items: center;
   padding:0;
-  margin: 0;
-  margin-left: 17px;
   list-style-type: none; 
   color: #7A7A7A;
 }
@@ -140,7 +148,6 @@ body{
 .search-button{
   padding: 8px;
   border: none;
-  margin-right: 29px;
   border-radius: 5px;
   background-color: #ffffff;
 }
@@ -148,7 +155,6 @@ body{
 .language-toggler{
   padding: 10px;
   border: none;
-  margin-right: 24px;
   border-radius: 5px;
   background-color: #ffffff;
 }

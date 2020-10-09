@@ -18,8 +18,8 @@
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: url("../webfonts/rubik-v11-latin-500.woff2") format("woff2"), 
-  url("../webfonts/rubik-v11-latin-500.woff") format("woff");
+  src: url("../webfonts/Rubik-Medium.woff2") format("woff2"), 
+  url("../webfonts/Rubik-Medium.woff") format("woff");
 }
 
 @font-face {

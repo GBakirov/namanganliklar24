@@ -288,6 +288,94 @@ img{
   padding-top: 22px;
   padding-bottom: 38px;
 }
+/* COVID INFO */
+.covid-info{
+  display: flex;
+  align-items: center;
+  padding: 30px 35px;
+  border-radius: 5px;
+  background-color: #f6f6f9;
+  color: #000;
+}
+.covid-info::before{
+  content: '';
+  width: 43px;
+  height: 45px;
+  margin-right: 25px;
+  background: url("../img/icon-covid.svg") no-repeat center center / contain;
+}
+.covid-info__heading{
+  width: 235px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 70px;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 500;
+}
+.covid-info__stats-list{
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;;
+}
+.covid-info__stat{
+  flex-grow: 1;
+  display: flex;
+  flex-wrap: wrap;
+  border-left: 2px solid #F4CCD1 ;
+  padding-left: 24px;
+  padding-right: 24px;
+  align-items: center;
+}
+.covid-info__stat::before{
+  content: "";
+  width: 38px;
+  height: 40px;
+  margin-right: 18px;
+  background:  no-repeat center center / contain;
+}
+.covid-info__stat--infected{
+  padding-top: 17px;
+  padding-bottom: 17px;
+  border-left-color: #eb5569;
+}
+.covid-info__stat--infected::before{
+  background-image: url("../img/icon-emoji-mask.svg");
+}
+.covid-info__stat--recovered::before{
+  background-image: url("../img/icon-emoji-smile.svg");
+}
+.covid-info__stat--dead::before{
+  background-image: url("../img/icon-no.svg");
+}
+.covid-info__stat-title{
+  margin: 0;
+  margin-bottom: 5px;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+}
+.covid-info__stat-title--red{
+  color: #DB0000;
+}
+.covid-info__stat-title--red::before{
+  background-image: url("../img/icon-emoji-mask.svg");
+}
+.covid-info__stat-title--green{
+  color: #05B135;
+}
+.covid-info__stat-title--green:before{
+  background-image: url("../img/icon-emoji-smile.svg");
+}
+.covid-info__stat-value{
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 500;
+}
 /*SITE_FOOTER*/
 .site-footer{
   padding: 18px 0;

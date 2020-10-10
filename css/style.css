@@ -218,15 +218,23 @@ img{
   text-decoration: none;
   font-size: 16px;
   line-height: 19px;
-  color: #ffffff;
   border-radius: 5px;
-  background-color: #1e96c8;
-  background-image: linear-gradient(90deg, #1E96C8 15.07%, #37AEE2 85.96%);
   transition: box-shadow 0.3s ease;
 }
-.telegram-sub:hover{
+.telegram-sub--dark{
+  color: #ffffff;
+  background-color: #1e96c8;
+  background-image: linear-gradient(90deg, #1E96C8 15.07%, #37AEE2 85.96%);
+}
+.telegram-sub--dark:hover{
   background-color: #37AEE2; 
   background-image: linear-gradient(90deg, #37AEE2  15.07%, #1E96C8 85.96%);
+}
+.telegram-sub--white{
+  background-color: #fff;
+  color: #295093;
+}
+.telegram-sub:hover{
   box-shadow: 0 5px 10px rgba(0, 0,0, 0.1);
 }
 .telegram-sub__img{
@@ -278,14 +286,16 @@ img{
   color: #ffffff;
   font-size: 14px;
   line-height: 17px;
-  
+}
+.site-footer *:focus{
+  box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.4);
 }
 .site-footer__top{
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
 }
 .site-footer__logo{
+  flex-shrink: 0; /*Kichrayib ketmasligi uchun*/
   display: flex;
   padding: 10px;
   margin-right: auto;
@@ -295,8 +305,66 @@ img{
 .site-footer__sub-text{
   margin: 0;
   margin-right: 17px;
+  padding-left: 25px;
+  padding-right: 25px;
 }
+.site-footer__telegram-sub{
+  flex-shrink: 0;
+}
+.site-footer__divider{
+  height: 3px;
+  border: none;
+  margin-top: 18px;
+  margin-bottom: 12px;
+  background-color: #133C82;
+}
+
+.site-footer__bottom{
+  display: flex;
+  flex-wrap: wrap;
+}
+.site-footer__about{
+  max-width: 365px;
+  margin-right: 110px;
+}
+.site-footer__heading{
+  margin-top: 0;
+  font-size: 14px;
+  line-height: 17px;
+}
+.site-footer__nav{
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 520px;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+.site-footer__nav-item{
+  width: 50%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.site-footer__nav-link{
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+.site-footer__nav-link:hover{
+  text-decoration: underline;
+}
+
 /* MEdia QUERIES */
+@media (max-width: 1060px){
+  .site-footer__about,
+  .site-footer__nav{
+    max-width: 100%;
+    width: 50%;
+    margin-right: 0;
+    padding-right: 30px;
+  }
+}
 @media (max-width: 1000px){
   .site-header{
     padding-top: 25px;
@@ -333,6 +401,20 @@ img{
   .sitenav__item{
     margin-top: 3px;
     margin-bottom: 3px;
+  }
+  .site-footer__about,
+  .site-footer__nav{
+    width: 100%;
+  }
+  .site-footer__about{
+    order: 1;
+  }
+  .site-footer__nav{
+    margin-bottom: 20px;
+  }
+  .site-footer__nav-item{
+    padding: 5px;
+    margin-bottom: 0;
   }
 }
 @media (max-width: 750px){
@@ -371,7 +453,7 @@ img{
   .exchange-rates,
   .search-button,
   .language-toggler,
-  .telegram-sub{
+  .site-header__telegram-sub{
     display: none;
   }
   .sitenav{
@@ -419,6 +501,18 @@ img{
   .top-banner{
     display: none;
   }
+  .site-footer__top{
+    flex-wrap: wrap;
+    align-items: stretch;
+  }
+  .site-footer__sub-text{
+    order: 1;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    margin-top: 10px;
+    text-align: right;
+  }
 }
 @media (max-width: 500px){
   .logo__img{
@@ -426,6 +520,25 @@ img{
   }
   .sitenav{
     width: 80%;
+  }
+  .site-footer__top{
+    flex-direction: column;
+    align-items: center;
+  }
+  .site-footer__logo{
+    margin-right: 0;
+    align-self: flex-start;
+  }
+  .site-footer__sub-text{
+    order: 0;
+    margin-bottom: 15px;
+    
+  }
+  .site-footer__telegram-sub{
+    align-self: flex-end;
+  }
+  .site-footer__nav-item{
+    width: 100%;
   }
 }
 

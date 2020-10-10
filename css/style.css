@@ -302,7 +302,7 @@ img{
   width: 43px;
   height: 45px;
   margin-right: 25px;
-  background: url("../img/icon-covid.svg") no-repeat center center / contain;
+  background: url("../img/icon-covid.png") no-repeat center center / contain;
 }
 .covid-info__heading{
   width: 235px;

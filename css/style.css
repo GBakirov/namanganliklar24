@@ -89,6 +89,9 @@ html{
   box-sizing: inherit; /*ota-elementidan olsin*/
 }
 body{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   font-family: "Rubik", "Arial", sans-serif;
   font-size: 15px;
   line-height: 18px;
@@ -278,6 +281,12 @@ img{
 /*TOP BANNER*/
 .top-banner__link{
   display: flex;
+}
+/*  MAIN CONTENT */
+.main-content{
+  flex-grow: 1;
+  padding-top: 22px;
+  padding-bottom: 38px;
 }
 /*SITE_FOOTER*/
 .site-footer{

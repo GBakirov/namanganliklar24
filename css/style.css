@@ -10,8 +10,10 @@
 /*9. Telegram-sub*/
 /*10. Sitenav*/
 /*11. Top Banner*/
-/*13. Media-Query*/
-/*12. Keyframes*/
+/*12. SITE_FOOTER*/
+/* Media-Query*/
+/* Keyframes*/
+
 
 /*FONTS*/
 @font-face {
@@ -268,6 +270,31 @@ img{
 /*TOP BANNER*/
 .top-banner__link{
   display: flex;
+}
+/*SITE_FOOTER*/
+.site-footer{
+  padding: 18px 0;
+  background-color: #295093;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 17px;
+  
+}
+.site-footer__top{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.site-footer__logo{
+  display: flex;
+  padding: 10px;
+  margin-right: auto;
+  border-radius: 5px;
+  background-color: #133C82;
+}
+.site-footer__sub-text{
+  margin: 0;
+  margin-right: 17px;
 }
 /* MEdia QUERIES */
 @media (max-width: 1000px){

@@ -296,15 +296,15 @@ img{
 /*  MAIN CONTENT */
 .main-content{
   flex-grow: 1;
-  padding-top: 22px;
-  padding-bottom: 38px;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 /* COVID INFO */
 .covid-info{
   display: flex;
   align-items: center;
   padding: 30px 35px;
-  margin-bottom: 18px;
+  margin-bottom: 25px;
   border-radius: 5px;
   background-color: #f6f6f9;
   color: #000;
@@ -390,7 +390,7 @@ img{
 }
 /* NEWS GRID */
 .news-grid{
-  margin-bottom: 16px;
+  margin-bottom: 25px;
 }
 .news-grid__list{
   display: flex;

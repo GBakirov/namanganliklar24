@@ -394,7 +394,6 @@ img{
 }
 .news-grid__list{
   display: flex;
-  flex-grow: 1;
   flex-wrap: wrap;
   padding: 0;
   margin: 0;
@@ -402,6 +401,7 @@ img{
   list-style-type: none;
 }
 .news-grid__item{
+  flex-grow: 1;
   position: relative;
   width: 386px;
   margin-bottom: 18px;

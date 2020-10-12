@@ -425,6 +425,7 @@ img{
   font-weight: 500;
 }
 .news-grid__link{
+  display: inline-block;
   color: #202020;
   text-decoration: none;
   transition: color 0.3s ease;

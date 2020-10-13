@@ -573,7 +573,7 @@ img{
   text-align: center;
 
 }
-.news-list__more-button{
+.button{
   padding: 10px 32px;
   border: 1px solid #295093;
   font-size: 17px;
@@ -587,7 +587,7 @@ img{
   transition: color 0.5s ease, 
               background-color 0.5s ease;
 }
-.news-list__more-button:hover{
+.button:hover{
   background-color: #fff;
   color: #295093;
   

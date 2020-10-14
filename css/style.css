@@ -704,6 +704,39 @@ img{
 .sidebar-banner__img{
   display: block;
 }
+/* SITE-APP */
+.site-app{
+  display: flex;
+  align-items: center;
+  padding: 65px 20px;
+  border-radius: 5px;
+  padding-left: 245px;
+  background: #F6F6F9 url("../img/telephone.png") no-repeat 20px bottom;
+}
+.site-app__body{
+  width: 530px;
+  margin-right: auto;
+}
+.site-app__heading{
+  padding: 0;
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 500;
+  color: #295093;
+}
+.site-app__text{
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 500;
+  color: #333333;
+}
+.site-app__link{
+  display: flex;
+  background-repeat: 5px;
+  margin-left: 20px;
+}
 /*SITE_FOOTER*/
 .site-footer{
   padding: 18px 0;
@@ -810,6 +843,20 @@ img{
   }
 
 }
+@media (max-width: 1200px){
+  .site-app{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    flex-wrap: wrap;
+  }
+  .site-app__body{
+    width: 100%;
+  }
+  .site-app__link{
+    margin-left: 0;
+    margin-right: 20px;
+  }
+}
 @media (max-width: 1150px){
   .covid-info__heading{
     margin-right: 40px;
@@ -873,7 +920,10 @@ img{
   .popular-news-banner{
     width: 100%;
   }
-
+  .sidebar-banner__img{
+    width: 100%;
+    height: auto;
+  }
 }
 @media (max-width: 850px){
   .site-header__top{
@@ -907,6 +957,20 @@ img{
   .notifications__button{
     font-size: 17px;
     line-height: 27px;
+  }
+  .site-app{
+    padding-top: 20px;
+    padding-left: 180px;
+    padding-bottom: 20px;
+    background-size: 150px;
+  }
+  .site-app__heading{
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .site-app__text{
+    font-size: 16px;
+    line-height: 20px;
   }
   .site-footer__about,
   .site-footer__nav{
@@ -1022,6 +1086,10 @@ img{
   .covid-info__stat:not(:last-child){
     border-bottom: 2px solid #F4CCD1;
   }
+  .site-app{
+    padding: 30px;
+    background-image: none;
+  }
   .site-footer__top{
     flex-wrap: wrap;
     align-items: stretch;
@@ -1108,6 +1176,15 @@ img{
   }
   .site-footer__nav-item{
     width: 100%;
+  }
+}
+@media (max-width: 500px){
+  .site-app{
+    justify-content: space-around;
+  }
+  .site-app__link{
+    max-width: 45%;
+    margin: 0;
   }
 }
 

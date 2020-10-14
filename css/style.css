@@ -286,7 +286,8 @@ img{
   text-decoration: none;
   transition: color 0.3s ease;
 }
-.sitenav__link:hover{
+.sitenav__link:hover,
+.sitenav__item--active .sitenav__link{
   color: #295091;
 }
 /*TOP BANNER*/

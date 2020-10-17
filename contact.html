@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Namanganliklar24 - article</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="page__body">
+
+
+  <!--SITE-HEADER-->
+  <header class="site-header">
+    <div class="container">
+      <!--Site-header top-->
+      <div class="site-header__top">
+        <a class="logo" href="index.html">
+          <img class="logo__img" src="img/logo.svg" alt="Лого сайта Namanganliklar24" width="287" height="33" />
+        </a>
+
+        <ul class="site-header__exchange-rates exchange-rates">
+          <li class="exchange-rates__item">
+            <b class="exchange-rates__icon">&dollar;</b>
+            <span class="exchange-rates__value">10137.20</span></li>
+          <li class="exchange-rates__item">
+            <b class="exchange-rates__icon">P</b>
+            <span class="exchange-rates__value">138.26</span></li>
+          <li class="exchange-rates__item">
+            <b class="exchange-rates__icon">&euro;</b>
+            <span class="exchange-rates__value">10988.72</span></li>
+        </ul>
+
+        <div class="site-header__actions">
+          <button class="site-header__search-button search-button" type="button">
+            <span class="search-button__wrapper">
+              <img class="search-button__img" src="img/icon_magnify.svg" alt="иконка лупы" width="24" height="24">
+            </span>
+          </button>
+          <button class="site-header__language-toggler language-toggler" type="button">
+            <span class="language-toggler__wrapper">
+              <img class="language-toggler__img" src="img/icon_russian_flag.svg" alt="иконка флага России" width="20"
+                height="20">
+              <span class="language-toggler__text">РУ</span>
+            </span>
+          </button>
+          <a class="site-header__telegram-sub telegram-sub telegram-sub--dark" href="https://tme.to/mayoquz"
+            target="_blank">
+            <img class="telegram-sub__img" src="img/icon_telegram.svg" alt="иконка телеграм" width="20" height="20">
+            <span class="telegram-sub__text">Подписатся</span>
+          </a>
+        </div>
+        <!--site-header__actions-->
+
+        <button class="site-header__toggler" type="button">Меню</button>
+
+      </div> <!-- site-header__top -->
+
+      <!--Site-header navigation-->
+      <nav class="sitenav">
+        <ul class="sitenav__list">
+          <li class="sitenav__item">
+            <a class="sitenav__link" href="#">Узбекистана</a>
+          </li>
+          <li class="sitenav__item">
+            <a class="sitenav__link" href="#">Мир</a>
+          </li>
+          <li class="sitenav__item sitenav__item--active">
+            <a class="sitenav__link" href="#">Экономика</a>
+          </li>
+          <li class="sitenav__item">
+            <a class="sitenav__link" href="#">Политика</a>
+          </li>
+          <li class="sitenav__item">
+            <a class="sitenav__link" href="#">Общество</a>
+          </li>
+          <li class="sitenav__item">
+            <a class="sitenav__link" href="#">Технологии</a>
+          </li>
+          <li class="sitenav__item">
+            <a class="sitenav__link" href="#">Спорт</a>
+          </li>
+          <li class="sitenav__item">
+            <a class="sitenav__link" href="#">Культура</a>
+          </li>
+          <li class="sitenav__item">
+            <a class="sitenav__link" href="#">Происшествия</a>
+          </li>
+          <li class="sitenav__item">
+            <a class="sitenav__link" href="#">Туризм</a>
+          </li>
+        </ul>
+      </nav>
+      <!--Top Banner-->
+      <aside class="top-banner">
+        <a class="top-banner__link" href="#" target="_blank">
+          <img class="top-banner__img" src="img/nrg-banner.jpg"
+            srcset="img/nrg-banner.jpg 1x, img/nrg-banner@2x.jpg  2x" alt="NRG company banner" width="1200" height="99">
+        </a>
+      </aside>
+    </div>
+    <!--container-->
+  </header>
+
+  <!--  MAIN CONTENT -->
+  <main class="main-content">
+    <div class="container">
+      <h1 class="main-content__page-title">
+        Напишите нам
+      </h1>
+      <div class="form-info-wrapper">
+        <!-- CONTACT FORM -->
+        <div class="contact-form">
+          <form class="contact-form__form" action="https://echo.htmlacademy.ru" method="POST">
+            <div class="contact-form__group">
+              <input class="contact-form__input" aria-label="Имя" type="text" name="name" placeholder="Имя" required>
+            </div>
+            <div class="contact-form__group">
+              <input class="contact-form__input" aria-label="Электронная почта" type="email" name="email"
+                placeholder="Электронная почта" required>
+            </div>
+            <div class="contact-form__group">
+              <input class="contact-form__input" aria-label="Номер телефона" type="tel" name="phone"
+                placeholder="Номер телефона" required>
+            </div>
+            <div class="contact-form__group">
+              <input class="contact-form__input" aria-label="Тема" type="text" name="name" placeholder="Тема" required>
+            </div>
+            <div class="contact-form__group">
+              <textarea class="contact-form__textare" aria-label="Текст" name="body" placeholder="Текст"
+                required></textarea>
+            </div>
+            <div class="contact-form__group contact-form__group--small">
+              <label class="contact-form__file-input">
+                <input class="visually-hidden" type="file">
+                <span class="contact-form__file-input-label">
+                  Прикрепить файл
+                  <img class="contact-form__file-icon" src="img/icon-file.svg" alt="File icon">
+                </span>
+              </label>
+            </div>
+            <div class="contact-form__group contact-form__group--small contact-form__group--captcha">
+              <input class="contact-form__input" type="tex" aria-label="Код" name="captcha" placeholder="Код" required>
+              <img class="contact-form__captcha-img" srcset="img/captcha_tetx.jpg 1x, img/captcha_tetx@2x.jpg 2x"
+                src="img/captcha_tetx.jpg" alt="">
+            </div>
+            <div class="contact-form__group contact-form__group--small">
+              <button class="button button--block" type="submit">Отправить</button>
+            </div>
+          </form>
+        </div>
+
+        <!-- CONTACT INFO -->
+        <section class="contact-info">
+          <h2 class="visually-hidden">Kontakt ma'lumotlar</h2>
+          <img class="contact-info__logo" src="img/logo.svg" alt="">
+          <div class="contact-info__group">
+            <p class="contact-info__heading">Электронная почта</p>
+            <p class="contact-info__value">info@namanganliklar24.uz</p>
+          </div>
+          <div class="contact-info__group">
+            <p class="contact-info__heading">Социальные сети</p>
+            <ul class="contact-info__socials">
+              <li class="contact-info__socials-item">
+                <a href="" class="contact-info__socials-link">
+                  <img src="img/icon-facebook.svg" alt="" class="contact-info__socials-img">
+                </a>
+              </li>
+              <li class="contact-info__socials-item">
+                <a href="" class="contact-info__socials-link">
+                  <img src="img/icon-twitter.svg" alt="" class="contact-info__socials-img">
+                </a>
+              </li>
+              <li class="contact-info__socials-item">
+                <a href="" class="contact-info__socials-link">
+                  <img src="img/icon-odnoklassniki.svg" alt="" class="contact-info__socials-img">
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="contact-info__group">
+            <p class="contact-info__heading">Телеграм канал</p>
+            <a class="telegram-sub telegram-sub--blue" href="https://tme.to/mayoquz" target="_blank">
+              <img class="telegram-sub__img" src="img/icon-telegram_blue.svg" alt="иконка телеграм" width="20"
+                height="22">
+              <span class="telegram-sub__text">Подписатся</span>
+            </a>
+          </div>
+          <div class="contact-info__group">
+            <p class="contact-info__heading">Мобильная приложение</p>
+            <div class="contact-info__site-app">
+              <a class="contact-info__site-app-link" href="#" target="_blank">
+                <img class="contact-info__site-app-img"
+                  srcset="img/googleplay-white.jpg 1x, img/googleplay-white@2x.jpg 2x " src="img/googleplay-white.jpg"
+                  alt="link to store" width="111" height="33">
+              </a>
+              <a class="contact-info__site-app-link" href="#" target="_blank">
+                <img class="contact-info__site-app-img"
+                  srcset="img/appstore-white.jpg 1x, img/appstore-white@2x.jpg 2x" src="img/appstore-white.jpg"
+                  alt="link to store" width="111" height="33">
+              </a>
+            </div>
+              
+            
+          </div>
+        </section>
+      </div>
+
+
+    </div>
+  </main>
+
+
+  <!-- SITE-FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer__top">
+        <a class="site-footer__logo" href="#">
+          <img class="site-footer__logo-img" src="img/footer-logo.svg" width="386" height="190" alt="Footer logo"
+            width="173" height="21">
+        </a>
+        <p class="site-footer__sub-text">Подписывайтесь на наш канал в Telegram и будьте всегда в курсе самых
+          последних новостей
+        </p>
+        <a class="telegram-sub telegram-sub--white site-footer__telegram-sub" href="https://tme.to/mayoquz"
+          target="_blank">
+          <img class="telegram-sub__img" src="img/icon_telegram white.svg" alt="иконка телеграм" width="20" height="22">
+          <span class="telegram-sub__text">Подписатся</span>
+        </a>
+      </div>
+
+      <hr class="site-footer__divider">
+
+      <div class="site-footer__bottom">
+        <section class="site-footer__about">
+          <h2 class="site-footer__heading">О сайте</h2>
+          <p class="site-footer__text">Воспроизводство, копирование, тиражирование, распространение и иное
+            использование информации с сайта «NAMANGANLIKLAR24.UZ» возможно только с предварительного
+            письменного разрешения редакции.
+          </p>
+        </section>
+        <ul class="site-footer__nav">
+          <li class="site-footer__nav-item">
+            <a class="site-footer__nav-link" href="#">Информация о сайте</a>
+          </li>
+          <li class="site-footer__nav-item">
+            <a class="site-footer__nav-link" href="#">Напишите нам</a>
+          </li>
+          <li class="site-footer__nav-item">
+            <a class="site-footer__nav-link" href="#">Реклама</a>
+          </li>
+          <li class="site-footer__nav-item">
+            <a class="site-footer__nav-link" href="#">Прислать новость</a>
+          </li>
+          <li class="site-footer__nav-item">
+            <a class="site-footer__nav-link" href="#">Использование материалов</a>
+          </li>
+          <li class="site-footer__nav-item">
+            <a class="site-footer__nav-link" href="#">Темы дня</a>
+          </li>
+          <li class="site-footer__nav-item">
+            <a class="site-footer__nav-link" href="#">Наша команда</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
